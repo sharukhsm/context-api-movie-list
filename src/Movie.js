@@ -4,9 +4,18 @@ import React from "react";
 It can also be written like this to be consise */
 const MovieList = ({ name, price }) => {
   return (
-    <div>
-      <h3>{name}</h3>
-      <h3>{price}</h3>
+    <div
+      style={{
+        paddingBottom: "5px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexFlow: "row wrap",
+      }}
+    >
+      <h2>
+        {name}: {price}
+      </h2>
     </div>
   );
 };
